@@ -1,5 +1,17 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 a {
-  text-align: center;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 a {
@@ -10,8 +22,22 @@ a {
   text-align: center;
 }
 
-a {
-  text-align: center;
+.nav {
+  max-width: 1182px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 32px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-link {
+  margin-right: 32px;
 }
 
 a {
