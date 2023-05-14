@@ -52,6 +52,12 @@
       .active {
         background-color: var.$brown-color;
         color: var.$secondary-color;
+        &:hover{
+          color: var.$primary-color;
+        }
+        &::after{
+          content: "";
+        }
       }
     }
     &--panel {
