@@ -1,0 +1,165 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixin" as mixin;
+.blog {
+  padding: 32px 0;
+  &__wrapper {
+    width: 100%;
+    @include mixin.flex-box(column, start, start);
+  }
+  &__breadcrumb {
+    @include mixin.flex-box(row, start, center);
+    gap: 12px;
+    margin-bottom: 35.8px;
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 22px;
+      color: var.$brown-color;
+      &:first-child {
+        color: var.$gray-color;
+      }
+    }
+  }
+  &__tab {
+    @include mixin.flex-box(column, start, start);
+    width: 100%;
+    &--index {
+      @include mixin.flex-box(row, start, center);
+      width: 100%;
+      gap: 16px;
+      margin-bottom: 72px;
+      li {
+        padding: 16px 26px;
+        background-color: var.$btn-bg-color;
+        border: 1px solid var.$btn-bg-color;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        border-radius: 32px;
+        transition: 0.3s;
+        cursor: pointer;
+        &:hover {
+          background-color: var.$secondary-color;
+          border: 1px solid var.$brown-color;
+        }
+      }
+      .active {
+        background-color: var.$brown-color;
+        color: var.$secondary-color;
+      }
+    }
+    &--panel {
+      width: 100%;
+      @include mixin.grid-box(48px,3,1fr);
+    }
+  }
+  &__card {
+    width: 100%;
+    padding: 8px;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    &:hover {
+      -webkit-box-shadow: 0px 0px 16px -1px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0px 0px 16px -1px rgba(34, 60, 80, 0.2);
+      box-shadow: 0px 0px 16px -1px rgba(34, 60, 80, 0.2);
+    }
+    margin-bottom: 48px;
+    &--img {
+      position: relative;
+      width: 100%;
+      margin-bottom: 26px;
+      img {
+        width: 100%;
+      }
+      span {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        padding: 5px 12px;
+        background-color: var.$secondary-color;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        color: var.$primary-color;
+        box-shadow: 0px 0px 2px #000000;
+        border-radius: 4px;
+      }
+    }
+    &--content {
+      width: 100%;
+      div {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 14px;
+        * {
+          font-weight: 500;
+          font-size: 0.875rem;
+          line-height: 17px;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.28px;
+          color: rgba(0, 0, 0, 0.35);
+        }
+      }
+      h4 {
+        font-weight: 700;
+        font-size: 1.125rem;
+        line-height: 27px;
+        color: var.$primary-color;
+        margin-bottom: 14px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 0.875rem;
+        line-height: 22px;
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+  &__more {
+    display: block;
+    margin: 0 auto;
+    margin-top: 46px;
+    padding: 13px 46px;
+    border-radius: 100px;
+    background-color: var.$brown-color;
+    border: 1px solid var.$brown-color;
+    color: var.$secondary-color;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: var.$secondary-color;
+    transition: 0.3s;
+    &:hover {
+      background-color: var.$secondary-color;
+      border: 1px solid var.$brown-color;
+      color: var.$primary-color;
+    }
+  }
+}
+@media (max-width: 860px) {
+  .blog {
+    &__tab{
+      &--panel{
+        grid-template-columns: repeat(2,1fr);
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .blog {
+    &__tab{
+      &--panel{
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

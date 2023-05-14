@@ -4,6 +4,7 @@
   background-color: var.$main-bg-color;
   position: sticky;
   top: 0;
+  z-index: 12;
 }
 .nav {
   max-width: 1182px;
@@ -38,6 +39,7 @@
 }
 .responsive-box {
   display: none;
+  z-index: 234;
   max-width: 100%;
   width: 290px;
   height: auto;
