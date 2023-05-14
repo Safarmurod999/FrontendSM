@@ -1,3 +1,107 @@
-a{
-    text-align: center;
+@use "../components/button";
+@use "../abstract/variables" as var;
+#header {
+  background-color: var.$main-bg-color;
+  position: sticky;
+  top: 0;
+}
+.nav {
+  max-width: 1182px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 0;
+}
+.navbar {
+  display: flex;
+}
+.nav-link {
+  margin-right: 32px;
+  display: flex;
+  align-items: center;
+  a {
+    font-weight: 500;
+    color: var.$primary-color;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+.nav-link:last-child {
+  margin: 0;
+}
+
+.hamburger {
+  display: none;
+}
+.responsive-box {
+  display: none;
+  max-width: 100%;
+  width: 290px;
+  height: auto;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 10px 24px 24px;
+  overflow: hidden;
+  z-index: 9998;
+  img {
+    max-width: 150px;
+  }
+}
+.box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.box-body {
+  border-top: 1px solid var.$gray-color;
+  list-style: none;
+  margin: 0;
+  padding: 16px 0 0;
+}
+.box-link, .responsive-box .accordion {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  padding: 12px 0;
+  margin-right: 36px;
+  a {
+    color: var.$primary-color;
+  }
+}
+.panel {
+    transition: all .24s ease-in-out !important;
+}
+
+@media screen and (max-width: 720px) {
+  .hamburger {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    display: none;
+  }
+  .enter-btn {
+    padding: 7px 21px;
+    margin-right: 20px;
+  }
+  .logo {
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 456px) {
+  .hamburger {
+    img {
+      max-width: 24px;
+    }
+  }
 }

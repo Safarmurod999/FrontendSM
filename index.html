@@ -5,10 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Najot ta'lim</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style/css/style.css" />
   </head>
   <body>
-    <header></header>
+    <header id="header">
+      <div class="container">
+        <nav class="nav">
+          <div class="logo">
+            <a href="./index.html">
+              <img src="./image/header/logo.svg" alt="logo-najot-talim"
+            /></a>
+          </div>
+          <ul class="navbar">
+            <li class="nav-link"><a href="./courses.html">Kurslar </a></li>
+            <li class="nav-link"><a href="./blog.html">Blog </a></li>
+            <li><button class="enter-btn">Kirish</button></li>
+            <li class="nav-link">
+              <button id="toogle">
+                <img src="./image/header/light.svg" alt="dark-mode" />
+              </button>
+            </li>
+            <li class="hamburger">
+              <button id="hamburger">
+                <img src="./image/header/icon-burger.svg" alt="hamburger" />
+              </button>
+            </li>
+          </ul>
+          <div class="responsive-box">
+            <div class="box-header">
+              <img src="./image/header/logo.svg" alt="logo" />
+              <button id="close-btn">
+                <img src="./image/header/icon-close.svg" alt="close" />
+              </button>
+            </div>
+            <ul class="box-body">
+              <li class="box-link">
+                <a href="./courses.html">Kurslar </a>
+              </li>
+              <li class="box-link"><a href="./blog.html">Blog </a></li>
+              <div class="accordionContainer">
+                <button class="accordion">Ma'lumotlar</button>
+                <div class="panel">
+                  <div class="footer-wrapper">
+                    <a class="footer-title footer-link" href="#">FAQ</a>
+                    <a class="footer-title footer-link" href="#">Blog</a>
+                    <a class="footer-title footer-link" href="#"
+                      >Ommaviy oferta</a
+                    >
+                  </div>
+                </div>
+
+                <button class="accordion">Ommabop kurslar</button>
+                <div class="panel">
+                  <div class="footer-wrapper">
+                    <a class="footer-title footer-link" href="#"
+                      >Dasturlash foundation</a
+                    >
+                    <a class="footer-title footer-link" href="#"
+                      >.NET mutaxassislik kursi</a
+                    >
+                  </div>
+                </div>
+
+                <button class="accordion">Bizning loyihalar</button>
+                <div class="panel">
+                  <div class="footer-wrapper">
+                    <a class="footer-title footer-link" href="#"
+                      >Osmondagi bolalar</a
+                    >
+                    <a class="footer-title footer-link" href="#"
+                      >0 dan 1 gacha</a
+                    >
+                    <a class="footer-title footer-link" href="#">Abutech</a>
+                    <a class="footer-title footer-link" href="#"
+                      >Alohida mavzu</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -17,13 +103,13 @@
               <div class="hero__title-table">
                 <div class="hero__title-job">Kasblarni</div>
                 <div class="text">
-                  <span class="burad-t t1"
+                  <span class="text-changer text-1"
                     >“Najot Ta’lim”<span class="hero__title-text"
                       >da</span
                     ></span
-                  ><span class="burad-t t2">mutaxassislardan</span
-                  ><span class="burad-t t3">onlayn</span
-                  ><span class="burad-t t4">istalgan nuqtadan</span>
+                  ><span class="text-changer text-2">mutaxassislardan</span
+                  ><span class="text-changer text-3">onlayn</span
+                  ><span class="text-changer text-4">istalgan nuqtadan</span>
                 </div>
               </div>
               o‘rganing
@@ -33,9 +119,421 @@
               o‘rganing.
             </p>
           </div>
+          <a class="main__btn" href="courses.html">Kurslarni ko'rish</a>
+        </div>
+      </section>
+      <section class="advantages">
+        <div class="container">
+          <div class="advantages__wrapper">
+            <div class="title">Bizning afzalliklarimiz</div>
+            <ul class="advantages__row">
+              <li class="advantages__item">
+                <div class="advantages__item-img">
+                  <img
+                    src="./image/afzalliklar/headdress.svg"
+                    alt="headdress"
+                  />
+                </div>
+                <div class="advantages__item-content">
+                  <div>Onlayn akademiya</div>
+                  <p>
+                    «Najot Ta’lim» digital academy — bu zamonaviy kasblar
+                    o‘qitiladigan onlayn akademiya. Qayerda bo‘lishingizdan
+                    qat’i nazar: uydami yo mehmonda, daladami yo safarda —
+                    o‘zingizga qulay tarzda va vaqtda bilim olishingiz mumkin,
+                    internet va noutbuk bo‘lsa bas.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__item-img">
+                  <img
+                    src="./image/afzalliklar/master-star.svg"
+                    alt="headdress"
+                  />
+                </div>
+                <div class="advantages__item-content">
+                  <div>O‘z ishining ustalari</div>
+                  <p>
+                    Darslar katta tajribaga ega malakali mutaxassislar tomonidan
+                    tayyorlangan. O‘z ishining ustalaridan yanada ishonchli
+                    bilim va tajribaga ega bo’lasiz
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__item-img">
+                  <img src="./image/afzalliklar/pc.svg" alt="headdress" />
+                </div>
+                <div class="advantages__item-content">
+                  <div>Shunchaki kurs emas</div>
+                  <p>
+                    Har bir o‘quv kursi shunday ishlab chiqilganki, ularni
+                    muvaffaqiyatli yakunlab, siz zamonaviy kasb egasiga
+                    aylanishingiz va shu sohada o‘z faoliyatingizni
+                    boshlashingiz mumkin. Hammasi o‘z qo‘lingizda.
+                  </p>
+                </div>
+              </li>
+              <li class="advantages__item">
+                <div class="advantages__item-img">
+                  <img src="./image/afzalliklar/target.svg" alt="headdress" />
+                </div>
+                <div class="advantages__item-content">
+                  <div>Interaktiv darslar</div>
+                  <p>
+                    Darslarni o‘zlashtirish davrida sizda savollar tug‘ilishi
+                    tabiiy holat. Mentorlarga murojaat qilishingiz, o’zingizni
+                    qiziqtirgan savollarizga javob olishingiz va tavsiyalar
+                    olishingiz mumkin
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <button class="accordion-btn">Ko‘proq</button>
+          </div>
+        </div>
+      </section>
+      <section class="directions">
+        <div class="container">
+          <div class="directions__wrapper">
+            <div class="title">Yo‘nalishlar bo‘yicha kurslar</div>
+            <p class="text">
+              Zamonaviy sohalardan birini o‘rganing va talabgir kasb egasi
+              bo‘ling!
+            </p>
+            <div class="directions__row">
+                <div class="directions__item">
+                    <h6>Dasturlash foundation</h6>
+                    <p class="text">Foundation dasturlash kursida </p>
+                </div>
+                <div class="directions__item">
+                    <h6>.NET mutaxassislik kursi</h6>
+                    <p class="text">.NET mutaxassislik kursi</p>
+                </div>
+            </div>
+            <a class="directions__link" href="courses.html">Barcha kurslarni ko‘rish</a>
+          </div>
+        </div>
+      </section>
+      <section class="workspace">
+        <div class="container">
+            <div class="workspace__wrapper">
+                <div class="title">Bitiruvchilarimizning ish joylari:</div>
+                <p class="text">Eng yaxshi bitiruvchilarimiz nufuzli tashkilot va kompaniyalarda faoliyat yuritadi. Zamonaviy kasb egalariga doim va har yerda talab yuqori bo‘ladi.</p>
+                <ul class="workspace__row">
+                    <li class="workspace__item">
+                        <img src="./image/workspace/epam.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/itechart.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-humo-avtive.27cb7be3.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-agro-active.930244da.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-davr-active.4df919e5.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-texnomart-active.e7d56eb5.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-soliq-active.b11f8eef.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-uzcard-active.8d40b858.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-my-taxi-acitve.0c69eef5.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-mfaktor-active.dcd05beb.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-jafton-active.5706e84f.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-fido.2ef7c3a2.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-ob-active.bcdff30b.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-islomuz-active.6fd5bef8.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/logo-cambridge-active.81b431ae.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/kunuz-active.10a5ae8e.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/yoshlar-ishlari-active.25fa6cd8.svg" alt="epam">
+                    </li>
+                    <li class="workspace__item">
+                        <img src="./image/workspace/pcg-active.19505e54.svg" alt="epam">
+                    </li>
+                </ul>
+            </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-left">
+            <div class="footer-left-top">
+              <div class="footer-logo">
+                <a href="#">
+                  <img src="./image/header/logo.svg" alt="logo" />
+                </a>
+              </div>
+              <p class="footer-title">
+                Onlayn platformaga tegishli barcha materiallar "NAJOT TA‘LIM
+                MARKAZI" MCHJning mulki hisoblanadi. Ushbu materiallardan onlayn
+                ta‘lim olishdan tashqari nusxa ko‘chirish, tarqatish va boshqa
+                maqsadlarda foydalanish qonunan man etiladi.
+              </p>
+            </div>
+            <div class="footer-left-bottom">
+              <h4 class="footer-copyright">© Najot Ta'lim,</h4>
+              <p class="footer-copyright">2023 Barcha huquqlar himoyalangan.</p>
+            </div>
+          </div>
+          <div class="footer-right">
+            <div class="desc-links">
+              <ul class="faq">
+                <h3 class="footer-h">Ma'lumotlar</h3>
+                <div class="footer-wrapper">
+                  <a class="footer-title footer-link" href="#">FAQ</a>
+                  <a class="footer-title footer-link" href="#">Blog</a>
+                  <a class="footer-title footer-link" href="#"
+                    >Ommaviy oferta</a
+                  >
+                </div>
+              </ul>
+              <ul class="footer-courses">
+                <h3 class="footer-h">Ommabop kurslar</h3>
+                <div class="footer-wrapper">
+                  <a class="footer-title footer-link" href="#"
+                    >Dasturlash foundation</a
+                  >
+                  <a class="footer-title footer-link" href="#"
+                    >.NET mutaxassislik kursi</a
+                  >
+                </div>
+              </ul>
+              <ul class="footer-projects">
+                <h3 class="footer-h">Bizning loyihalar</h3>
+                <div class="footer-wrapper">
+                  <a class="footer-title footer-link" href="#"
+                    >Osmondagi bolalar</a
+                  >
+                  <a class="footer-title footer-link" href="#">0 dan 1 gacha</a>
+                  <a class="footer-title footer-link" href="#">Abutech</a>
+                  <a class="footer-title footer-link" href="#">Alohida mavzu</a>
+                </div>
+              </ul>
+              <div class="accordionContainer">
+                <button class="accordion">Ma'lumotlar</button>
+                <div class="panel">
+                  <div class="footer-wrapper">
+                    <a class="footer-title footer-link" href="#">FAQ</a>
+                    <a class="footer-title footer-link" href="#">Blog</a>
+                    <a class="footer-title footer-link" href="#"
+                      >Ommaviy oferta</a
+                    >
+                  </div>
+                </div>
+
+                <button class="accordion">Ommabop kurslar</button>
+                <div class="panel">
+                  <div class="footer-wrapper">
+                    <a class="footer-title footer-link" href="#"
+                      >Dasturlash foundation</a
+                    >
+                    <a class="footer-title footer-link" href="#"
+                      >.NET mutaxassislik kursi</a
+                    >
+                  </div>
+                </div>
+
+                <button class="accordion">Bizning loyihalar</button>
+                <div class="panel">
+                  <div class="footer-wrapper">
+                    <a class="footer-title footer-link" href="#"
+                      >Osmondagi bolalar</a
+                    >
+                    <a class="footer-title footer-link" href="#"
+                      >0 dan 1 gacha</a
+                    >
+                    <a class="footer-title footer-link" href="#">Abutech</a>
+                    <a class="footer-title footer-link" href="#"
+                      >Alohida mavzu</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="footer-middle">
+                <div class="footer-middle-social">
+                  <h3 class="footer-h footer-bottom-h">Tarmoqlar:</h3>
+
+                  <div class="footer-socials">
+                    <a href="#" class="footer-social-m facebook">
+                      <div class="social-box">
+                        <i class="fa-brands fa-facebook-f"></i></div
+                    ></a>
+                    <a href="#" class="footer-social-m youtube">
+                      <div class="social-box">
+                        <i class="fa-brands fa-youtube"></i></div
+                    ></a>
+                    <a href="#" class="footer-social-m instagram">
+                      <div class="social-box">
+                        <i class="fa-brands fa-instagram"></i></div
+                    ></a>
+                    <a href="#" class="footer-social-m linkedin">
+                      <div class="social-box">
+                        <i class="fa-brands fa-linkedin-in"></i></div
+                    ></a>
+                    <a href="#" class="footer-social-m tweeter">
+                      <div class="social-box">
+                        <i class="fa-brands fa-twitter"></i></div
+                    ></a>
+                  </div>
+                </div>
+                <div class="footer-middle-number">
+                  <h3 class="footer-h footer-bottom-h">Telefon raqami:</h3>
+                  <p class="footer-text-address">+998 (78) 888 9 888</p>
+                </div>
+              </div>
+              <div class="footer-bottom">
+                <div class="footer-bottom-top">
+                  <div class="footer-middle-social">
+                    <h3 class="footer-h footer-bottom-h">Tarmoqlar:</h3>
+
+                    <div class="footer-socials">
+                      <a href="#" class="footer-social-m facebook">
+                        <div class="social-box">
+                          <i class="fa-brands fa-facebook-f"></i></div
+                      ></a>
+                      <a href="#" class="footer-social-m youtube">
+                        <div class="social-box">
+                          <i class="fa-brands fa-youtube"></i></div
+                      ></a>
+                      <a href="#" class="footer-social-m instagram">
+                        <div class="social-box">
+                          <i class="fa-brands fa-instagram"></i></div
+                      ></a>
+                      <a href="#" class="footer-social-m linkedin">
+                        <div class="social-box">
+                          <i class="fa-brands fa-linkedin-in"></i></div
+                      ></a>
+                      <a href="#" class="footer-social-m tweeter">
+                        <div class="social-box">
+                          <i class="fa-brands fa-twitter"></i></div
+                      ></a>
+                    </div>
+                  </div>
+                  <div class="footer-middle-number">
+                    <h3 class="footer-h footer-bottom-h">Telefon raqami:</h3>
+                    <p class="footer-text-address">+998 (78) 888 9 888</p>
+                  </div>
+                </div>
+                <div class="footer-address">
+                  <h3 class="footer-h footer-bottom-h">
+                    Toshkent shahri, Chilonzor-9, Qatortol ko‘chasi
+                  </h3>
+                </div>
+                <p class="footer-text-address">
+                  Mo‘ljal: Rayhon milliy taomlari qarshi tomoni, 1- va 2-uylar
+                  orqa tomoni.
+                </p>
+                <div class="footer-left-bottom bottom-info">
+                  <h4 class="footer-copyright">© Najot Ta'lim,</h4>
+                  <p class="footer-copyright">
+                    2023 Barcha huquqlar himoyalangan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="footer-right-bottom">
+              <div class="footer-address">
+                <h3 class="footer-h footer-bottom-h">
+                  Toshkent shahri, Chilonzor-9, Qatortol ko‘chasi
+                </h3>
+                <p class="footer-text-address">
+                  Mo‘ljal: Rayhon milliy taomlari qarshi tomoni, 1- va 2-uylar
+                  orqa tomoni.
+                </p>
+              </div>
+              <div class="footer-bottom-social">
+                <div class="footer-social">
+                  <h3 class="footer-h footer-bottom-h">Tarmoqlar:</h3>
+
+                  <div class="footer-socials">
+                    <a href="#" class="footer-social-m facebook">
+                      <div class="social-box">
+                        <i class="fa-brands fa-facebook-f"></i></div
+                    ></a>
+                    <a href="#" class="footer-social-m youtube">
+                      <div class="social-box">
+                        <i class="fa-brands fa-youtube"></i></div
+                    ></a>
+                    <a href="#" class="footer-social-m instagram">
+                      <div class="social-box">
+                        <i class="fa-brands fa-instagram"></i></div
+                    ></a>
+                    <a href="#" class="footer-social-m linkedin">
+                      <div class="social-box">
+                        <i class="fa-brands fa-linkedin-in"></i></div
+                    ></a>
+                    <a href="#" class="footer-social-m tweeter">
+                      <div class="social-box">
+                        <i class="fa-brands fa-twitter"></i></div
+                    ></a>
+                  </div>
+                </div>
+                <div class="footer-number">
+                  <h3 class="footer-h footer-bottom-h">Telefon raqami:</h3>
+                  <p class="footer-text-address">+998 (78) 888 9 888</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+          this.classList.toggle("active");
+
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      let openBtn = document.getElementById("hamburger");
+      let resBox = document.querySelector(".responsive-box");
+      let closeBtn = document.getElementById("close-btn");
+      openBtn.addEventListener("click", () => {
+        resBox.style.display = "block";
+      });
+      closeBtn.addEventListener("click", () => {
+        resBox.style.display = "none";
+      });
+    </script>
   </body>
 </html>
