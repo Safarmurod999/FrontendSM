@@ -87,9 +87,23 @@
     color: var.$text-color;
   }
 }
-.reviewContainer {
-  display: flex;
+.reviews {
+  padding: 50px 0;
 }
+.reviewContainer {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+  @media screen and (max-width: 1120px) {
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: auto;
+  }
+}
+
 .review-item {
   position: relative;
   max-width: 100%;
@@ -199,36 +213,37 @@
   padding: 50px 0;
 }
 .dark-header {
-  background-color: #0F1826 !important;
+  background-color: #0f1826 !important;
 }
 .body-dark {
   background-color: #021923 !important;
 }
 .other-dark {
-  background-color: #09111B !important;
+  background-color: #09111b !important;
 }
 .help-right {
   max-width: 512px;
 }
-.help-row {
-  display: flex;
-}
+
 .help-right,
 .help-left {
   flex: 50%;
 }
 .help-left {
-  img {
-    width: 100%;
-  }
+  background-image: url("../../../image/help/operator.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 input,
 label {
   display: block;
 }
 .help-row {
+  display: flex;
+
   border-radius: 20px;
-  background-color: var.$bg-color;
+  background: rgba(249, 248, 247, 0.23);
 }
 .feedback-form {
   border-radius: 16px;
@@ -279,5 +294,10 @@ label {
   color: var.$brown-color;
   &:hover {
     text-decoration: underline;
+  }
+}
+@media screen and (max-width: 768px) {
+  .feedback-form {
+    padding: 24px 12px;
   }
 }

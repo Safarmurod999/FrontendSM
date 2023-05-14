@@ -630,8 +630,25 @@ button {
   color: #607987;
 }
 
+.reviews {
+  padding: 50px 0;
+}
+
 .reviewContainer {
-  display: flex;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: auto auto auto auto;
+}
+@media screen and (max-width: 1120px) {
+  .reviewContainer {
+    grid-template-columns: auto auto;
+    grid-gap: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .reviewContainer {
+    grid-template-columns: auto;
+  }
 }
 
 .review-item {
@@ -747,7 +764,7 @@ button {
 }
 
 .dark-header {
-  background-color: #0F1826 !important;
+  background-color: #0f1826 !important;
 }
 
 .body-dark {
@@ -755,15 +772,11 @@ button {
 }
 
 .other-dark {
-  background-color: #09111B !important;
+  background-color: #09111b !important;
 }
 
 .help-right {
   max-width: 512px;
-}
-
-.help-row {
-  display: flex;
 }
 
 .help-right,
@@ -771,8 +784,11 @@ button {
   flex: 50%;
 }
 
-.help-left img {
-  width: 100%;
+.help-left {
+  background-image: url("../../../image/help/operator.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 input,
@@ -781,8 +797,9 @@ label {
 }
 
 .help-row {
+  display: flex;
   border-radius: 20px;
-  background-color: #F9F8F7;
+  background: rgba(249, 248, 247, 0.23);
 }
 
 .feedback-form {
@@ -843,6 +860,11 @@ label {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .feedback-form {
+    padding: 24px 12px;
+  }
+}
 .courses {
   padding: 32px 0;
 }
