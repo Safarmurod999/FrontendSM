@@ -1,13 +1,63 @@
-a {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  padding-top: 83px;
 }
 
 a {
-  text-align: center;
+  text-decoration: none;
 }
 
-a {
-  text-align: center;
+ul {
+  list-style: none;
+}
+
+button, select, input, textarea {
+  outline: none;
+  border: none;
+}
+
+button, a {
+  cursor: pointer;
+}
+
+#backtop {
+  border: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 99;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #6911ad;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#backtop img {
+  width: 30px;
+  height: 30px;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../../fonts/Lato/Lato-Regular.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+.container {
+  max-width: 1150px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
 
 a {
