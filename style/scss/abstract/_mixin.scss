@@ -1,3 +1,23 @@
-a{
-    text-align: center;
+@mixin flex-box($direction, $justify, $align) {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+@mixin grid-box($gap, $repeat, $fraction) {
+  display: grid;
+  grid-template-columns: repeat($repeat, $fraction);
+  grid-gap: $gap;
+}
+@mixin main-btn($padding, $background-color, $border, $border-radius, $color) {
+  padding: $padding;
+  background-color: $background-color;
+  border: $border;
+  border-radius: $border-radius;
+  color: $color;
+  &:hover {
+  }
+  &:active {
+  }
 }

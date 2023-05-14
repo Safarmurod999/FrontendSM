@@ -1,0 +1,219 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixin" as mixin;
+.courses {
+  padding: 32px 0;
+  &__wrapper {
+    width: 100%;
+    @include mixin.flex-box(column, start, start);
+  }
+  &__breadcrumb {
+    @include mixin.flex-box(row, start, center);
+    gap: 12px;
+    margin-bottom: 35.8px;
+    a {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 1rem;
+      line-height: 22px;
+      color: var.$brown-color;
+      &:first-child {
+        color: var.$gray-color;
+      }
+    }
+  }
+  &__top {
+    @include mixin.flex-box(row, space-between, center);
+    width: 100%;
+    margin-bottom: 27.8px;
+  }
+  &__search {
+    position: relative;
+    width: 350px;
+    input {
+      width: 100%;
+      padding: 14px 15px;
+      background: #f7f7f5;
+      border-radius: 100px;
+    }
+    input,
+    input::placeholder {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1rem;
+      line-height: 19px;
+      display: flex;
+      align-items: center;
+      color: #757575;
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      right: 16px;
+      transform: translateY(-50%);
+    }
+  }
+  &__tab {
+    @include mixin.flex-box(column, start, start);
+    width: 100%;
+    &--index {
+      @include mixin.flex-box(row, start, center);
+      width: 100%;
+      gap: 16px;
+      margin-bottom: 72px;
+      button {
+        padding: 16px 26px;
+        background-color: var.$btn-bg-color;
+        border: 1px solid transparent;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.875rem;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.7);
+        border-radius: 32px;
+        &:hover{
+          background-color: var.$secondary-color;
+          border: 1px solid var.$brown-color;
+        }
+      }
+      .active
+       {
+        background-color: var.$brown-color;
+        color: var.$secondary-color;
+        &:hover{
+          color: var.$primary-color;
+        }
+      }
+      .active{
+        &::after{
+          content: "";
+        }
+      }
+    }
+    &--panel {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+  &__card {
+    width: calc(50% - 31px / 2);
+    border-radius: 4px;
+    padding: 24px;
+    transition: box-shadow 0.3s ease;
+    background-color: var.$bg-color;
+    &:hover {
+      -webkit-box-shadow: 0px 0px 16px -1px rgba(34, 60, 80, 0.2);
+      -moz-box-shadow: 0px 0px 16px -1px rgba(34, 60, 80, 0.2);
+      box-shadow: 0px 0px 16px -1px rgba(34, 60, 80, 0.2);
+    }
+    &__top {
+      @include mixin.flex-box(row, start, center);
+      flex-wrap: nowrap;
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+    &__title {
+      max-width: 267px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 34px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.56px;
+      color: var.$primary-color;
+      margin-bottom: 24px;
+      span {
+        display: none;
+      }
+    }
+    &__text {
+      max-width: 260px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: -0.28px;
+      color: rgba(0, 0, 0, 0.7);
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 5;
+      -webkit-box-orient: vertical;
+    }
+    &__span {
+      padding: 5px 12px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 18px;
+      color: var.$primary-color;
+      background: #d1d1d1;
+      border-radius: 4px;
+    }
+    &__info {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      color: var.$brown-color;
+    }
+    &__bottom {
+      @include mixin.flex-box(row, space-between, center);
+      flex-wrap: nowrap;
+    }
+    &__right {
+      img {
+        width: 208px;
+        height: 208px;
+      }
+    }
+    &__description {
+      display: none;
+    }
+  }
+}
+@media (max-width: 1048px) {
+  .courses {
+    &__card {
+      &__top {
+        display: none;
+      }
+      &__bottom {
+        flex-direction: column-reverse;
+        gap: 43px;
+      }
+      &__left,
+      &__title,
+      &__text {
+        max-width: 100%;
+      }
+      &__title {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        line-height: 29px;
+        span {
+          display: block;
+        }
+      }
+      &__description {
+        display: block;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 728px) {
+  .courses {
+    &__top {
+      gap: 16px;
+    }
+    &__card {
+      width: 100%;
+      margin-bottom: 24px;
+    }
+  }
+}

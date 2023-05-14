@@ -1,6 +1,9 @@
 @use "./base/reset";
 @use "./base/typography";
 
+@use "./components/text";
+@use "./components/title";
+
 @use "./layout/container";
 @use "./layout/header";
 @use "./layout/footer";
@@ -8,3 +11,4 @@
 @use "./pages/home";
 @use "./pages/courses";
 @use "./pages/blog";
+
