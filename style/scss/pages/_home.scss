@@ -1,0 +1,88 @@
+@use "../abstract/variables" as var;
+@use "../abstract/mixin" as mixin;
+.hero {
+  background-image: url("../../../image/hero/hero-bg.png");
+  background-position: bottom 0 right 27%, calc(50% + 270px) calc(50% + 47px);
+  background-size: 650px 450px, contain;
+  padding-bottom: 60px;
+  background-color: #f1f0ee;
+  background-repeat: no-repeat;
+  &__wrapper {
+    width: 100%;
+    padding-top: 116px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 2.5rem !important;
+    line-height: 56px;
+    letter-spacing: -0.02em;
+    color: var.$primary-color;
+    margin: 0 0 19px;
+    &-job {
+      margin-right: 8px;
+      margin-bottom: 35px;
+    }
+    .text {
+      position: relative;
+      margin-left: 32px;
+      width: 400px;
+      color: var.$brown-color;
+      font-weight: 700;
+      font-size: 2.5rem !important;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+      .burad-t {
+        position: absolute;
+        left: -30px;
+        bottom: -24px;
+        margin-bottom: 12px;
+        opacity: 0;
+      }
+      .burad-t.t1,
+      .burad-t.t2,.burad-t.t3,
+      .burad-t.t4 {
+        animation-name: text-down;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+      }
+      .burad-t.t1{
+        animation-delay: 3s;
+      }
+      .burad-t.t2 {
+        animation-delay: 6s;
+      } 
+      .burad-t.t3 {
+        animation-delay: 9s;
+      }
+      .burad-t.t4 {
+        animation-delay: 12s;
+      }
+    }
+    @keyframes text-down{
+        0%{
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        10%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        20%{
+            opacity: 1;
+            transform: translateY(0);
+        }
+        30%{
+            opacity: 0;
+            transform: translateY(10px);
+        }
+    }
+  }
+  &__text {
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    margin: 0 0 70px;
+    color: var.$text-color;
+  }
+}

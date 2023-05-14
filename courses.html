@@ -1,18 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Najot Ta'lim</title>
-    <link rel="stylesheet" href="./style/css/style.css">
-</head>
-<body>
-  <main>
+    <link rel="stylesheet" href="./style/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="courses">
+        <div class="container">
+          <div class="courses__wrapper">
+            <div class="courses__breadcrumb">
+              <a href="index.html">Bosh sahifa</a>
+              <img src="./image/courses/arrow.svg" alt="arrow" />
+              <a href="#">Kurslar</a>
+            </div>
+            <div class="courses__top">
+              <h1 class="courses__title title">Barcha o‘quv kurslari</h1>
+              <div class="courses__search">
+                <img src="./image/courses/search.svg" alt="search-icon" />
+                <input type="text" placeholder="Izlash" />
+              </div>
+            </div>
+            <div class="courses__tab">
+              <div class="courses__tab--index">
+                <button class="courses__tab--btn" onclick="showTab(0)">Barchasi</button>
+                <button class="courses__tab--btn" onclick="showTab(1)">Dasturlash</button>
+              </div>
+              <div id="first-panel" class="courses__tab--panel">
+                <div class="courses__card">
+                  <div class="courses__card__top">
+                    <span class="courses__card__span">Dasturlash</span>
+                    <p class="courses__card__info">
+                      Davomiylik: 19 soat 24 daqiqa
+                    </p>
+                    <p class="courses__card__info">Darslar soni: 126 ta</p>
+                  </div>
+                  <div class="courses__card__bottom">
+                    <div class="courses__card__left">
+                      <div class="courses__card__title">
+                        Dasturlash foundation
+                        <span class="courses__card__span">Dasturlash</span>
+                      </div>
+                      <p class="courses__card__text">
+                        Foundation dasturlash kursida C va Python dasturlash
+                        tillari va ular orqali dasturlashning mantiq-mohiyati
+                        o’rgatiladi. Kurs davomida dasturlashning fundamental
+                        tushunchalari, dasturchining ishini yengillashtirib
+                        beradigan texnologiyalar, interfeys va ma’lumotlar
+                        bazasi bilan ishlash jarayonlari haqida ma’lumotlar
+                        beriladi.
+                      </p>
+                    </div>
+                    <div class="courses__card__right">
+                      <img
+                        src="./image/courses/foundatoin-laptop.svg"
+                        alt="dasturlash"
+                      />
+                    </div>
+                  </div>
+                  <div class="courses__card__description">
+                    <p class="courses__card__info">
+                      Davomiylik: 19 soat 24 daqiqa
+                    </p>
+                    <p class="courses__card__info">Darslar soni: 126 ta</p>
+                  </div>
+                </div>
+                <div class="courses__card">
+                  <div class="courses__card__top">
+                    <span class="courses__card__span">Dasturlash</span>
+                    <p class="courses__card__info">
+                      Davomiylik: 19 soat 24 daqiqa
+                    </p>
+                    <p class="courses__card__info">Darslar soni: 126 ta</p>
+                  </div>
+                  <div class="courses__card__bottom">
+                    <div class="courses__card__left">
+                      <div class="courses__card__title">
+                        .NET mutaxassislik kursi
+                        <span class="courses__card__span">Dasturlash</span>
+                      </div>
+                      <p class="courses__card__text">
+                        .NET mutaxassislik kursi yordamida universal C#
+                        dasturlash tilida ishlovchi va oʻz faoliyatida .NET
+                        platformasi va texnologiyalaridan foydalanuvchi
+                        dasturchiga aylaning. C# dasturlash tilining
+                        imkoniyatlari va qoʻllash doirasi nihoyatda keng, uni
+                        mukammal bilgan dasturchi esa veb-saytlardan tortib
+                        mobil va desktop ilovalargacha, oʻyinlardan tortib
+                        kross-platformal
+                      </p>
+                    </div>
+                    <div class="courses__card__right">
+                      <img
+                        src="./image/courses/dotnet.svg"
+                        alt="dasturlash"
+                      />
+                    </div>
+                  </div>
+                  <div class="courses__card__description">
+                    <p class="courses__card__info">
+                      Davomiylik: 19 soat 24 daqiqa
+                    </p>
+                    <p class="courses__card__info">Darslar soni: 126 ta</p>
+                  </div>
+                </div>
+              </div>
+              <div id="second-panel" class="courses__tab--panel">
+           
+                <div class="courses__card">
+                  <div class="courses__card__top">
+                    <span class="courses__card__span">Dasturlash</span>
+                    <p class="courses__card__info">
+                      Davomiylik: 19 soat 24 daqiqa
+                    </p>
+                    <p class="courses__card__info">Darslar soni: 126 ta</p>
+                  </div>
+                  <div class="courses__card__bottom">
+                    <div class="courses__card__left">
+                      <div class="courses__card__title">
+                        .NET mutaxassislik kursi
+                        <span class="courses__card__span">Dasturlash</span>
+                      </div>
+                      <p class="courses__card__text">
+                        .NET mutaxassislik kursi yordamida universal C#
+                        dasturlash tilida ishlovchi va oʻz faoliyatida .NET
+                        platformasi va texnologiyalaridan foydalanuvchi
+                        dasturchiga aylaning. C# dasturlash tilining
+                        imkoniyatlari va qoʻllash doirasi nihoyatda keng, uni
+                        mukammal bilgan dasturchi esa veb-saytlardan tortib
+                        mobil va desktop ilovalargacha, oʻyinlardan tortib
+                        kross-platformal
+                      </p>
+                    </div>
+                    <div class="courses__card__right">
+                      <img
+                        src="./image/courses/dotnet.svg"
+                        alt="dasturlash"
+                      />
+                    </div>
+                  </div>
+                  <div class="courses__card__description">
+                    <p class="courses__card__info">
+                      Davomiylik: 19 soat 24 daqiqa
+                    </p>
+                    <p class="courses__card__info">Darslar soni: 126 ta</p>
+                  </div>
+                </div>
+                     <div class="courses__card">
+                  <div class="courses__card__top">
+                    <span class="courses__card__span">Dasturlash</span>
+                    <p class="courses__card__info">
+                      Davomiylik: 19 soat 24 daqiqa
+                    </p>
+                    <p class="courses__card__info">Darslar soni: 126 ta</p>
+                  </div>
+                  <div class="courses__card__bottom">
+                    <div class="courses__card__left">
+                      <div class="courses__card__title">
+                        Dasturlash foundation
+                        <span class="courses__card__span">Dasturlash</span>
+                      </div>
+                      <p class="courses__card__text">
+                        Foundation dasturlash kursida C va Python dasturlash
+                        tillari va ular orqali dasturlashning mantiq-mohiyati
+                        o’rgatiladi. Kurs davomida dasturlashning fundamental
+                        tushunchalari, dasturchining ishini yengillashtirib
+                        beradigan texnologiyalar, interfeys va ma’lumotlar
+                        bazasi bilan ishlash jarayonlari haqida ma’lumotlar
+                        beriladi.
+                      </p>
+                    </div>
+                    <div class="courses__card__right">
+                      <img
+                        src="./image/courses/foundatoin-laptop.svg"
+                        alt="dasturlash"
+                      />
+                    </div>
+                  </div>
+                  <div class="courses__card__description">
+                    <p class="courses__card__info">
+                      Davomiylik: 19 soat 24 daqiqa
+                    </p>
+                    <p class="courses__card__info">Darslar soni: 126 ta</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="./src/tabComponent.js">
 
-  </main>
-  <footer>
-
-  </footer>
-</body>
+    </script>
+  </body>
 </html>

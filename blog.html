@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Najot ta'lim</title>
+    <link rel="stylesheet" href="./style/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__wrapper">
+            <div class="blog__breadcrumb">
+              <a href="index.html">Bosh sahifa</a>
+              <img src="./image/courses/arrow.svg" alt="arrow" />
+              <a href="#">Blog</a>
+            </div>
+          </div>
+          <div class="blog__tab">
+            <ul class="blog__tab--index">
+              <li class="blog__tab--btn" onclick="showAll(7,0)">
+                Barchasi
+              </li>
+              <li class="blog__tab--btn" onclick="showTabBlog(`Bitiruv marosimi`,1)">
+                Bitiruv marosimi
+              </li>
+              <li class="blog__tab--btn" onclick="showTabBlog(`Master-klass`,2)">
+                Master klass
+              </li>
+              <li class="blog__tab--btn" onclick="showTabBlog(`Musobaqa`,3)">
+                Musobaqa
+              </li>
+              <li class="blog__tab--btn" onclick="showTabBlog(`Dasturlash`,4)">
+                Dasturlash
+              </li>
+              <li class="blog__tab--btn" onclick="showTabBlog(`Najot Quiz`,5)">
+                Najot Quiz
+              </li>
+            </ul>
+            <ul id="blog__tab---panel" class="blog__tab--panel">
+            </ul>
+          </div>
+          <button class="blog__more" onclick="showAll(10,0)">
+            Ko'proq ko'rish
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="./src/blogFilter.js"></script>
+  </body>
 </html>
