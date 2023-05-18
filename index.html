@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Najot Ta'lim</title>
-    <link rel="stylesheet" href="./style/css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -13,6 +12,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <link rel="stylesheet" href="./style/css/style.css" />
   </head>
   <body>
@@ -204,189 +209,261 @@
               bo‘ling!
             </p>
             <div class="directions__row">
-                <div class="directions__item">
-                    <h6>Dasturlash foundation</h6>
-                    <p class="text">Foundation dasturlash kursida </p>
-                </div>
-                <div class="directions__item">
-                    <h6>.NET mutaxassislik kursi</h6>
-                    <p class="text">.NET mutaxassislik kursi</p>
-                </div>
+              <div class="directions__item">
+                <h6>Dasturlash foundation</h6>
+                <p class="text">Foundation dasturlash kursida</p>
+              </div>
+              <div class="directions__item">
+                <h6>.NET mutaxassislik kursi</h6>
+                <p class="text">.NET mutaxassislik kursi</p>
+              </div>
             </div>
-            <a class="directions__link" href="courses.html">Barcha kurslarni ko‘rish</a>
+            <a class="directions__link" href="courses.html"
+              >Barcha kurslarni ko‘rish</a
+            >
           </div>
         </div>
       </section>
       <section class="workspace">
         <div class="container">
-            <div class="workspace__wrapper">
-                <div class="title">Bitiruvchilarimizning ish joylari:</div>
-                <p class="text">Eng yaxshi bitiruvchilarimiz nufuzli tashkilot va kompaniyalarda faoliyat yuritadi. Zamonaviy kasb egalariga doim va har yerda talab yuqori bo‘ladi.</p>
-                <ul class="workspace__row">
-                    <li class="workspace__item">
-                        <img src="./image/workspace/epam.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/itechart.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-humo-avtive.27cb7be3.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-agro-active.930244da.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-davr-active.4df919e5.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-texnomart-active.e7d56eb5.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-soliq-active.b11f8eef.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-uzcard-active.8d40b858.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-my-taxi-acitve.0c69eef5.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-mfaktor-active.dcd05beb.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-jafton-active.5706e84f.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-fido.2ef7c3a2.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-ob-active.bcdff30b.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-islomuz-active.6fd5bef8.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/logo-cambridge-active.81b431ae.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/kunuz-active.10a5ae8e.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/yoshlar-ishlari-active.25fa6cd8.svg" alt="epam">
-                    </li>
-                    <li class="workspace__item">
-                        <img src="./image/workspace/pcg-active.19505e54.svg" alt="epam">
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </section>
-    </main>
-
+          <div class="workspace__wrapper">
+            <div class="title">Bitiruvchilarimizning ish joylari:</div>
+            <p class="text">
+              Eng yaxshi bitiruvchilarimiz nufuzli tashkilot va kompaniyalarda
+              faoliyat yuritadi. Zamonaviy kasb egalariga doim va har yerda
+              talab yuqori bo‘ladi.
+            </p>
+            <ul class="workspace__row">
+              <li class="workspace__item">
+                <img src="./image/workspace/epam.svg" alt="epam" />
+              </li>
+              <li class="workspace__item">
+                <img src="./image/workspace/itechart.svg" alt="epam" />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-humo-avtive.27cb7be3.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-agro-active.930244da.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-davr-active.4df919e5.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-texnomart-active.e7d56eb5.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-soliq-active.b11f8eef.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-uzcard-active.8d40b858.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-my-taxi-acitve.0c69eef5.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-mfaktor-active.dcd05beb.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-jafton-active.5706e84f.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-fido.2ef7c3a2.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-ob-active.bcdff30b.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-islomuz-active.6fd5bef8.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/logo-cambridge-active.81b431ae.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/kunuz-active.10a5ae8e.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/yoshlar-ishlari-active.25fa6cd8.svg"
+                  alt="epam"
+                />
+              </li>
+              <li class="workspace__item">
+                <img
+                  src="./image/workspace/pcg-active.19505e54.svg"
+                  alt="epam"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="reviews">
         <div class="container">
           <div class="reviewContainer">
-            <div class="review-item">
-              <div class="playbox">
-                <div class="play-img">
-                  <img
-                    id="playBtn"
-                    src="./image/reviews/icon-pause.svg"
-                    alt="play"
-                  />
+            <div class="swiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <div class="review-item">
+                    <div class="playbox">
+                      <div class="play-img">
+                        <img
+                          class="videoBtn"
+                          src="./image/reviews/icon-pause.svg"
+                          alt="play"
+                        />
+                      </div>
+                      <p>Videoni ko'rish</p>
+                    </div>
+                    <div class="reviews__item-backdrop"></div>
+                    <video
+                      class="reviewVideo"
+                      id="reviewVideo"
+                      src="https://cdn.najottalim.uz/najottalim/short-videos/60a6ad55-4ca3-4d0f-8007-470b9cc39a88.mp4"
+                    ></video>
+                    <div class="reviews__item-full-name">
+                      <h4 class="reviews__item-date">25.01.2023</h4>
+                      <h4 class="reviews__item-last-name">Grafik dizayner</h4>
+                      <h4 class="reviews__item-first-name">
+                        Abdumannof Tursunov
+                      </h4>
+                    </div>
+                    <div id="playVid" class="playVid" onclick="myFunction(0)"></div>
+                  </div>
                 </div>
-                <p>Videoni ko'rish</p>
-              </div>
-              <div class="reviews__item-backdrop"></div>
-              <video
-                id="reviewVideo"
-                src="https://cdn.najottalim.uz/najottalim/short-videos/60a6ad55-4ca3-4d0f-8007-470b9cc39a88.mp4"
-              ></video>
-              <div class="reviews__item-full-name">
-                <h4 class="reviews__item-date">25.01.2023</h4>
-                <h4 class="reviews__item-last-name">Grafik dizayner</h4>
-                <h4 class="reviews__item-first-name">
-                  Shahzoda Sunnatillayeva
-                </h4>
-              </div>
-              <div onclick="myFunction()" id="playVid"></div>
-            </div>
-            <div class="review-item">
-              <div class="playbox">
-                <div class="play-img">
-                  <img
-                    id="playBtn"
-                    src="./image/reviews/icon-pause.svg"
-                    alt="play"
-                  />
+                <div class="swiper-slide">
+                  <div class="review-item">
+                    <div class="playbox">
+                      <div class="play-img">
+                        <img
+                          class="videoBtn"
+                          src="./image/reviews/icon-pause.svg"
+                          alt="play"
+                        />
+                      </div>
+                      <p>Videoni ko'rish</p>
+                    </div>
+                    <div class="reviews__item-backdrop"></div>
+                    <video
+                      class="reviewVideo"
+                      id="reviewVideo"
+                      src="https://cdn.najottalim.uz/najottalim/short-videos/d7ccc165-8afc-4294-92ed-02d9f1a6f7a2.mp4"
+                    ></video>
+                    <div class="reviews__item-full-name">
+                      <h4 class="reviews__item-date">25.01.2023</h4>
+                      <h4 class="reviews__item-last-name">Grafik dizayner</h4>
+                      <h4 class="reviews__item-first-name">
+                        Salohiddin Dilmatov
+                      </h4>
+                    </div>
+                    <div id="playVid" class="playVid" onclick="myFunction(1)"></div>
+                  </div>
                 </div>
-                <p>Videoni ko'rish</p>
-              </div>
-              <div class="reviews__item-backdrop"></div>
-              <video
-                id="reviewVideo"
-                src="https://cdn.najottalim.uz/najottalim/short-videos/d7ccc165-8afc-4294-92ed-02d9f1a6f7a2.mp4"
-              ></video>
-              <div class="reviews__item-full-name">
-                <h4 class="reviews__item-date">25.01.2023</h4>
-                <h4 class="reviews__item-last-name">Grafik dizayner</h4>
-                <h4 class="reviews__item-first-name">
-                  Shahzoda Sunnatillayeva
-                </h4>
-              </div>
-              <div onclick="myFunction()" id="playVid"></div>
-            </div>
-            <div class="review-item">
-              <div class="playbox">
-                <div class="play-img">
-                  <img
-                    id="playBtn"
-                    src="./image/reviews/icon-pause.svg"
-                    alt="play"
-                  />
+                <div class="swiper-slide">
+                  <div class="review-item">
+                    <div class="playbox">
+                      <div class="play-img">
+                        <img
+                          class="videoBtn"
+                          src="./image/reviews/icon-pause.svg"
+                          alt="play"
+                        />
+                      </div>
+                      <p>Videoni ko'rish</p>
+                    </div>
+                    <div class="reviews__item-backdrop"></div>
+                    <video
+                      class="reviewVideo"
+                      id="reviewVideo"
+                      src="https://cdn.najottalim.uz/najottalim/short-videos/6468a330-6e3e-4a85-a6fe-8c5a066ce6bc.mp4"
+                    ></video>
+                    <div class="reviews__item-full-name">
+                      <h4 class="reviews__item-date">25.01.2023</h4>
+                      <h4 class="reviews__item-last-name">Grafik dizayner</h4>
+                      <h4 class="reviews__item-first-name">
+                        Shahzoda Sunnatillayeva
+                      </h4>
+                    </div>
+                    <div id="playVid" class="playVid" onclick="myFunction(2)"></div>
+                  </div>
                 </div>
-                <p>Videoni ko'rish</p>
-              </div>
-              <div class="reviews__item-backdrop"></div>
-              <video
-                id="reviewVideo"
-                src="https://cdn.najottalim.uz/najottalim/short-videos/6468a330-6e3e-4a85-a6fe-8c5a066ce6bc.mp4"
-              ></video>
-              <div class="reviews__item-full-name">
-                <h4 class="reviews__item-date">25.01.2023</h4>
-                <h4 class="reviews__item-last-name">Grafik dizayner</h4>
-                <h4 class="reviews__item-first-name">
-                  Shahzoda Sunnatillayeva
-                </h4>
-              </div>
-              <div onclick="myFunction()" id="playVid"></div>
-            </div>
-            <div class="review-item">
-              <div class="playbox">
-                <div class="play-img">
-                  <img
-                    id="playBtn"
-                    src="./image/reviews/icon-pause.svg"
-                    alt="play"
-                  />
+                <div class="swiper-slide">
+                  <div class="review-item">
+                    <div class="playbox">
+                      <div class="play-img">
+                        <img
+                          class="videoBtn"
+                          src="./image/reviews/icon-pause.svg"
+                          alt="play"
+                        />
+                      </div>
+                      <p>Videoni ko'rish</p>
+                    </div>
+                    <div class="reviews__item-backdrop"></div>
+                    <video
+                      class="reviewVideo"
+                      id="reviewVideo"
+                      src="https://cdn.najottalim.uz/najottalim/short-videos/3c5a9b58-5822-43aa-9603-87762de32bf9.mp4"
+                    ></video>
+                    <div class="reviews__item-full-name">
+                      <h4 class="reviews__item-date">25.01.2023</h4>
+                      <h4 class="reviews__item-last-name">Grafik dizayner</h4>
+                      <h4 class="reviews__item-first-name">
+                        Sayfulloh Asadullayev
+                      </h4>
+                    </div>
+                    <div onclick="myFunction(3)" id="playVid" class="playVid"></div>
+                  </div>
                 </div>
-                <p>Videoni ko'rish</p>
               </div>
-              <div class="reviews__item-backdrop"></div>
-              <video
-                id="reviewVideo"
-                src="https://cdn.najottalim.uz/najottalim/short-videos/3c5a9b58-5822-43aa-9603-87762de32bf9.mp4"
-              ></video>
-              <div class="reviews__item-full-name">
-                <h4 class="reviews__item-date">25.01.2023</h4>
-                <h4 class="reviews__item-last-name">Grafik dizayner</h4>
-                <h4 class="reviews__item-first-name">
-                  Shahzoda Sunnatillayeva
-                </h4>
-              </div>
-              <div onclick="myFunction()" id="playVid"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
             </div>
           </div>
         </div>
@@ -654,53 +731,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-      let openBtn = document.getElementById("hamburger");
-      let resBox = document.querySelector(".responsive-box");
-      let closeBtn = document.getElementById("close-btn");
-      openBtn.addEventListener("click", () => {
-        resBox.style.display = "block";
-      });
-      closeBtn.addEventListener("click", () => {
-        resBox.style.display = "none";
-      });
-      function myFunction() {
-        let playBtn = document.getElementById("playBtn");
-        var playVideo = document.getElementById("reviewVideo");
-        var button = document.getElementById("playVid");
-
-        if (playVideo.paused) {
-          playBtn.setAttribute("src", "./image/reviews/icon-pause.svg");
-          playVideo.play();
-        } else {
-          playBtn.setAttribute("src", "./image/reviews/icon-play.svg");
-          playVideo.pause();
-        }
-      }
-      let toogle = document.getElementById("toogle");
-      let header = document.getElementById("header");
-      let hero = document.getElementById("hero");
-      let body = document.body;
-      let footer = document.getElementById("footer");
-      toogle.addEventListener("click", () => {
-        body.classList.toggle("body-dark");
-        her.classList.toggle("other-dark");
-        header.classList.toggle("dark-header");
-        footer.classList.toggle("dark-header")
-      });
-    </script>
+    <script src="./src/main.js"></script>
   </body>
 </html>
