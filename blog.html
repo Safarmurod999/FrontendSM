@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Najot ta'lim</title>
     <link rel="stylesheet" href="./style/css/style.css" />
+     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header id="header">
@@ -119,7 +126,7 @@
                 Najot Quiz
               </li>
             </ul>
-            <ul id="blog__tab---panel" class="blog__tab--panel">
+            <ul id="blog__tab--panel" class="blog__tab--panel">
             </ul>
           </div>
           <button class="blog__more" onclick="showAll(10,0)">
@@ -354,33 +361,6 @@
       </div>
     </footer>
     <script src="./src/blogFilter.js"></script>
-    <script>
-      var acc = document.getElementsByClassName("accordion");
-      var i;
-
-      for (i = 0; i < acc.length; i++) {
-        acc[i].addEventListener("click", function () {
-          /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-          this.classList.toggle("active");
-
-          var panel = this.nextElementSibling;
-          if (panel.style.display === "block") {
-            panel.style.display = "none";
-          } else {
-            panel.style.display = "block";
-          }
-        });
-      }
-      let openBtn = document.getElementById("hamburger");
-      let resBox = document.querySelector(".responsive-box");
-      let closeBtn = document.getElementById("close-btn");
-      openBtn.addEventListener("click", () => {
-        resBox.style.display = "block";
-      });
-      closeBtn.addEventListener("click", () => {
-        resBox.style.display = "none";
-      });
-    </script>
+    <script src="./src/main.js"></script>
   </body>
 </html>
